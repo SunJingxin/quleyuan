@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="css/leyuan.css"/>
-<script src="./lib/baiduTemplate.js"></script>
+<script src="./lib/loadimg.js"></script>
 <ul class="header">
   <li class="header-li">
   	<span>分类</span>
@@ -56,37 +56,7 @@
 
 <div class="main">
 </div>
-
-
-<!-- 。。。。。-->
- <!--<div id="result"></div>
- <script id="tc" type="text/html">
-  <div>
-    <h1>title:<%=title%></h1>
-    <%if(list.length>1){%>
-      <h2>输出list,共有<%=list.length%>个元素</h2>
-      <ul>
-      	<%for(var i=0;i<5;i++){%>
-      	  <li><%=list[i]%></li>
-      	<%}%>
-      </ul>
-    <%}else{%>
-    	<h2>没有list数据</h2>
-    <%}%>	
-   </div> 
+	<script>
+  //图片的异步加载
+	 lazyLoad.init();
   </script>
-<script type="text/javascript">
-var data={
-    "title":'欢迎使用baiduTemplate',
-    "list":[
-        'test1:默认支持HTML转义，如输出<script>，也可以关掉，语法<:=value> 详见API',
-        'test2:',
-        'test3:',
-        'test4:list[5]未定义，模板系统会输出空'
-    ]
-};
-var bt=baidu.template;
-var html=bt('tc',data);
-//渲染
-document.getElementById('result').innerHTML=html;
-</script>-->

@@ -1,4 +1,5 @@
 	<link rel="stylesheet" type="text/css" href="css/home.css"/>
+	<script src="./lib/loadimg.js"></script>
 	<div class="header">			
 			<div class="header-div">
 				<img src="img/slider.jpg" />
@@ -25,15 +26,21 @@
 		  <span>精彩推荐</span>
 		</div>
 		<a href="#" class="img1 img0">
-		  <img src="img/index1.png" />
+		  <img class="load-img"  src="./img/buy.gif" data-src = "img/index1.png"/>
 		</a>
 		<a href="#" class="img2 img0">
-		  <img src="img/index2.png" />
+		  <img class="load-img" src="./img/buy.gif" data-src = "img/index2.png"/>
 		</a>
 		<a href="#" class="img3 img0">
-		  <img src="img/index3.png" />	
+		  <img class="load-img" src="./img/buy.gif" data-src = "img/index3.png" />	
 		</a>
 		<a href="#" class="img4 img0">
-		  <img src="img/index4.png" />
+		  <img class="load-img" src="./img/buy.gif" data-src = "img/index4.png"/>
 		</a>
+		<!------------------->
+		
 <!--这里后面可以插入JS文件，或者写在home.js里面-->
+	<script>
+  //图片的异步加载
+	 lazyLoad.init();
+    </script>

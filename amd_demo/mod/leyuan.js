@@ -59,8 +59,14 @@ define(["text!../../tpl/leyuan.html"],function(html){
          success:function (data) {         	
          	var data=data.data;
          	//data是数组，对象数组       
-        for(var i=0;i<data.length;i++){        		
-         var a=$("<a></a>").css("background-image","url("+data[i].img+")");
+               for(var i=0;i<data.length;i++){
+         	
+         var div=$("<div class='main-div'></div>");
+         var img0=$("<img class='main-div-img load-img'/>");
+             img0.attr("src","./img/1.jpg");
+             img0.attr("data-src",data[i].img);
+         var a=$("<a></a>");
+          //.css("background-image","url("+data[i].img+")")
              a.attr("href","#")
              a.css("display","block");
          var img1=$("<img class='main-a-img1'/>").attr("src","img/border.gif")
@@ -73,8 +79,11 @@ define(["text!../../tpl/leyuan.html"],function(html){
          	 a.append(span1);
          	 a.append(span2);
          	 a.append(span3);
-         	 $(".main").append(a);
-         	};//for  
+         	 div.append(img0);
+         	 div.append(a);
+         	 $(".main").append(div);
+         	  lazyLoad.init();
+         	}//for
           },//success
           timeout: 3000
         })//ajax	
@@ -111,6 +120,7 @@ define(["text!../../tpl/leyuan.html"],function(html){
         xhr.onreadystatechange = call;
         xhr.open('get','data/p22.json',true);
         xhr.send(null);
+         lazyLoad.init();
     }    
     function call(){    	
       if(xhr.readyState==4){
@@ -118,8 +128,14 @@ define(["text!../../tpl/leyuan.html"],function(html){
       	var objs = JSON.parse(xhr.responseText);	         
       	var data=objs.data;
          	//data是数组，对象数组       
-        for(var i=0;i<data.length;i++){        		
-         var a=$("<a></a>").css("background-image","url("+data[i].img+")");
+                for(var i=0;i<data.length;i++){
+         	
+         var div=$("<div class='main-div'></div>");
+         var img0=$("<img class='main-div-img load-img'/>");
+             img0.attr("src","./img/1.jpg");
+             img0.attr("data-src",data[i].img);
+         var a=$("<a></a>");
+          //.css("background-image","url("+data[i].img+")")
              a.attr("href","#")
              a.css("display","block");
          var img1=$("<img class='main-a-img1'/>").attr("src","img/border.gif")
@@ -132,8 +148,10 @@ define(["text!../../tpl/leyuan.html"],function(html){
          	 a.append(span1);
          	 a.append(span2);
          	 a.append(span3);
-         	 $(".main").append(a);	 
-      	}
+         	 div.append(img0);
+         	 div.append(a);
+         	 $(".main").append(div);
+         	}//for
       }
     }
  }
@@ -163,8 +181,13 @@ if(oA[num].innerHTML=="西城区"){
          	var data=data.data;
          	//data是数组，对象数组       
         for(var i=0;i<data.length;i++){
-         		
-         var a=$("<a></a>").css("background-image","url("+data[i].img+")");
+         	
+         var div=$("<div class='main-div'></div>");
+         var img0=$("<img class='main-div-img load-img'/>");
+             img0.attr("src","./img/1.jpg");
+             img0.attr("data-src",data[i].img);
+         var a=$("<a></a>");
+          //.css("background-image","url("+data[i].img+")")
              a.attr("href","#")
              a.css("display","block");
          var img1=$("<img class='main-a-img1'/>").attr("src","img/border.gif")
@@ -177,7 +200,9 @@ if(oA[num].innerHTML=="西城区"){
          	 a.append(span1);
          	 a.append(span2);
          	 a.append(span3);
-         	 $(".main").append(a);
+         	 div.append(img0);
+         	 div.append(a);
+         	 $(".main").append(div);
          	};//for  
           },//success
           timeout: 3000

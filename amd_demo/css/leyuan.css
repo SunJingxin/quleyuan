@@ -78,7 +78,7 @@
   width: 16rem;
   min-height: 1rem;
 }
-.main a{
+.main-div{
 	display: block;
   width: 16rem;
   height:7.2rem;
@@ -87,7 +87,22 @@
   background-size: 16rem 7.2rem;
   overflow: hidden;
   color: yellow;
- 
+  position: relative;
+}
+.main-div-img{
+	display: block;
+	width: 16rem;
+  height:7.2rem;
+}
+.main a{
+	display: block;
+  width: 16rem;
+  height:7.2rem;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .main-a-img1{ 

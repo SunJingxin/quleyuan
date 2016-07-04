@@ -1,0 +1,42 @@
+body{
+  background-color: #666666;
+}
+.main{
+	
+  width: 14.425rem;
+  height: 9.5rem;
+  background-color: white;
+  border-radius:0.25rem;
+  margin: 0 auto;
+  margin-top:2rem ;
+  overflow: hidden;
+}
+.main span{
+  display: block;
+  margin:0 auto;
+  font: 0.85rem;
+  margin: 1.5rem 0 0 4.075rem;
+  color: black;
+  font-weight:600 ;
+}
+.main form {
+	width: 16rem;
+}
+.main form input[type="text"]{
+  width: 12.8rem;
+  height: 1.9rem;
+  border-radius:0.2rem ;
+  margin:0.825rem 0.8rem;
+  border-color:#909090 ;  
+}
+.main form input[type="submit"]{
+  width: 12.8rem;
+  height: 1.9rem;
+  border-radius:0.2rem ;
+  margin:0.2rem 0.8rem;
+  border-color:#909090 ;  
+  background-color:#ED6C64 ;
+  color: white;
+  font-size:0.85rem;
+  border: none;
+}

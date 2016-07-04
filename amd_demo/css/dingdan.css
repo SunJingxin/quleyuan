@@ -1,0 +1,35 @@
+body{
+  background-color: #EEEEEE;
+}
+span{
+  display: block;
+}
+.header{
+  width: 16rem;
+  height: 2.25rem;
+  display:flex;
+  background-color: #EAEAEA;
+}
+.header li{
+  flex-grow: 1;
+  margin-right: 0.05rem;
+  text-align: center;
+  line-height: 2.25rem;
+  float: left;
+  background-color: white;
+  border-bottom: 0.075 solid white;
+  font-size:0.75rem ;
+  color: black;
+}
+/*可变*/
+.header .header-li{
+   border-bottom: 0.075rem solid red;
+   
+}
+.main{
+  width:16rem;
+  height:5.925rem ;
+  background-color:#EAEAEA ;
+  text-align: center;
+  line-height: 5.925rem;
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../css/fukuan.css"/>
+
+ <title>Document</title>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = (clientWidth/31.05).toFixed(1) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+        //1242px时1rem是40px
+    </script>
+</head>
+<style type="text/css">
+body{
+  background-color: #EEEEEE;
+}
+.header{
+  width: 29.55rem;
+  height: 4.5rem;
+  padding-left:1.5rem ;
+  line-height: 4.5rem;
+  font-size: 1.25rem;
+  color: #595758;
+  background-color: white;
+}
+.main{
+  background-color: white;
+  border-bottom:0.08px solid #DFDFDF;
+  padding:0 0.75rem ;
+}
+.main li{
+  border-bottom: 1px solid #CDCDCD;
+  height:3rem;
+  line-height: 3rem;
+  font-size: 1.1rem;
+  color: #585858;
+  padding-left:0.75rem ; 
+}
+.main li span:nth-of-type(1){
+  display: block;
+  float: left;
+}
+.main li span:nth-of-type(2){
+  display: block;
+  float: right;
+}
+.select0{
+  position: relative;
+  
+}
+.select0 img{
+  width: 1.25rem;
+  height: 1.75rem;
+  position: absolute;
+  top: 0.7rem;
+  right: 0;
+}
+.select0 input{
+  border: none;
+  font-size: 1.1rem;
+  color: #585858;
+  width: 9rem;
+}
+.select1{
+  position: relative;
+  
+}
+.select1 select{
+  border: none;
+  font-size: 1.1rem;
+  color: #585858;
+
+}
+.select1 img{
+  width: 1.25rem;
+  height: 1rem;
+  position: absolute;
+  top: 0.9rem;
+  right: 0;
+}
+.main li:last-child{
+  border: none;
+}
+.end{
+  left: 0;
+  bottom: 0;
+  width: 31.05rem;
+  height: 3.75rem;
+  display: flex;
+}
+.end a{
+  width: 50%;
+  text-align: center;
+  line-height: 3.75rem;
+  font-size:1.3rem;
+  color: #676767;
+  background-color: #E6E6E6;
+}
+.end a:nth-of-type(2){
+  background-color: #EC6D66;
+  color: #FFFFFF;
+}
+</style>
+	<body>
+	  <div class="header">
+	    梦追忆乐享25次卡
+	  </div>
+	  <ul class="main">
+	  	<li>
+	  		<span>数量</span>
+	  		<span>1</span>
+	  	</li>
+	  	<li>
+	  		<span>单价:</span>
+	  		<span>488.00</span>
+	  	</li>
+	  	<li>
+	  		<span>联系方式:</span>
+	  		<span class="select0">
+	  		  <img src="../img/zhifu/images/images/zhifu3_03.png" />
+	  		  <input type="text" placeholder="18832581538"/>
+	  		</span>
+	  	</li>
+	  	<li>
+	  		<span>优惠券:</span>
+	  		<span class="select1">	  	
+	  			<img src="../img/zhifu/images/IMG_4610_03.png" />
+	  			<select>
+	  				<option>请选择</option>
+	  				<option>请选择1</option>
+	  				<option>请选择2</option>
+	  				<option>请选择3</option>
+	  				
+	  			</select>
+	  		</span>
+	  	</li>
+	  	<li>
+	  		<span>使用余额:</span>
+	  		<span>0.00</span>
+	  	</li>
+	  </ul>
+	  <div class="end">
+	  	<a >
+	  	  <span>实付款:</span>
+	  	  <span>488.00</span>
+	  	</a>
+	  	<a href="#">
+	  	  立即支付
+	  	</a>
+	  </div>
+	  
+	</body>
+</html>

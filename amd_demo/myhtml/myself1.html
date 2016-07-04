@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../css/myself1.css"/>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = (clientWidth/27).toFixed(1) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+        //1080px时1rem是40px
+    </script>
+	</head>
+	<body>
+		<div class="header">
+		  <img src="../img/myself1/1.JPG"  />
+		  <span>孙景欣2011</span>
+		</div>
+		<div class="main"> 
+			<a href="#">
+				我的二维码
+				<div class="main-div"></div>
+			</a>
+			<a href="#">
+				我的推广
+				<div class="main-div"></div>
+				<span class="main-span">0.00元</span>
+			</a>
+			<a href="#">
+				我的乐享卡销售				
+				<div class="main-div"></div>
+				<span class="main-span">0.00元</span>
+			</a>
+		</div>
+	</body>
+</html>

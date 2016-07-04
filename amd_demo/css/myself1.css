@@ -1,0 +1,56 @@
+body{
+  background-color: #EEEEEE;
+}
+.header{
+  width:27rem;
+  height: 13.4rem;
+  background-image: url(../img/myself1/images/1_02.png);
+  background-size: 27rem 13.4rem;
+  overflow: hidden;
+}
+.header img{
+  width: 6.05rem;
+  height: 6.05rem;
+  border-radius:50%;
+  margin:6.325rem 0 0 1.5rem;
+}
+.header span{
+  display: block;
+  color: white;
+  float: left;
+  margin-top: -4.5rem;
+  margin-left: 8.5rem;
+}
+.main{
+  width: 27rem;
+}
+
+.main a{
+  display: block;
+  width: 24.675rem;
+  height: 3.6rem;
+  background-color: white;
+  border: 0.075rem solid #CCCCCC;
+  border-radius:0.275rem;
+  margin: 0.75rem 0.75rem 0 0.75rem;
+  color: #666666;
+  line-height: 3.6rem;
+  font-size: 1.075rem;
+  padding-left:0.825rem;
+}
+
+.main-div{
+  width:0.8rem;
+  height:0.8rem;
+  border-left: 0.2rem solid #666666;
+  border-top: 0.2rem solid #666666;
+  float:right ;
+  transform: rotate(135deg);
+  margin: 0.985rem 0.825rem 0 0 ;
+}
+.main-span{
+  display: block;
+  float: right;
+  font-size:0.8rem;
+  margin:-0.2rem 0.2rem 0 0 ;
+}

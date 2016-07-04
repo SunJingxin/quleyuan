@@ -1,0 +1,112 @@
+body{
+  background-color: #EEEEEE;
+}
+span{
+  display: block;
+}
+.header{
+  width: 16rem;
+  height: 2.25rem;
+  display:flex;
+  background-color: #EAEAEA;
+}
+.header li{
+  flex-grow: 1;
+  margin-right: 0.05rem;
+  text-align: center;
+  line-height: 2.25rem;
+  float: left;
+  background-color: white;
+  border-bottom: 0.075 solid white;
+  font-size:0.75rem ;
+  color: black;
+  position: relative;
+}
+/*可变*/
+.header .header-li{
+   border-bottom: 0.075rem solid red;
+   
+}
+.quan{
+  width: 16rem;
+  height: 10.175rem;
+  background-color: #EAEAEA;
+  overflow: hidden;
+  position: relative;
+}
+
+.quan1{
+  width: 8.25rem;
+  height: 5.25rem;
+  background-color: white;
+  margin: 0.5rem 0 0 0.5rem;
+  border-radius:0.25rem ;
+  float: left;
+  padding:0.75rem 0 0 0.75rem ;
+  font-size:0.425rem ;
+}
+.quan1 span{
+  height:0.875rem ;
+}
+.quan1 span:nth-of-type(1){
+  font-size: 0.85rem;
+  height: 1.225rem;
+  line-height: 1.225rem;
+}
+.quan1 a{
+  color: #E4007F;
+  text-decoration: underline;
+  font-size:0.5rem ;
+}
+.quan2{
+  width: 6rem;
+  height: 3.8rem;
+  background-color: #E4007F;	
+  border-radius:0.25rem ;
+  margin-top: 0.5rem ;
+  float: left;
+  padding-top: 2.2rem;
+}
+.quan2 span{
+  float: left;
+}
+.quan2 span:nth-of-type(1){
+  margin-left: 1.25rem;
+  font-size:0.6rem ;
+  color: white;
+}
+.quan2 span:nth-of-type(2){
+  font-size:1.25rem ;
+  color: white;
+}
+.quan3{
+  width: 1rem;
+  height: 1rem;
+  border-radius:50% ;
+  background-color:#EAEAEA ;
+  position: absolute;
+  left: 9rem;
+  top: 0rem;
+}
+.quan4{
+  width: 1rem;
+  height: 1rem;
+  border-radius:50% ;
+  background-color:#EAEAEA ;
+  position: absolute;
+  left: 9rem;
+  top: 6rem;  
+  z-index: 1;
+}
+.quan5{
+  position: absolute;
+  left: 9.3755rem;
+  top: 1rem;  	
+}
+.quan5 li{
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius:50% ;
+  background-color: #E4007F;
+  margin-bottom: 0.2rem;
+}

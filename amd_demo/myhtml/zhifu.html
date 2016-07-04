@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../css/zhifu.css"/>
+
+ <title>Document</title>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = (clientWidth/27).toFixed(1) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+        //1080px时1rem是40px
+    </script>
+</head>
+	<body>
+	  <div class="header">
+	  	<div class="view">
+	  		<div class="labox">
+	  			<img src="../img/zhifu/images/1_02.png"/>
+	  			<img src="../img/zhifu/images/1_02.png"/>
+	  			<img src="../img/zhifu/images/1_02.png"/>
+	  		</div>
+	  	</div>
+	  	<ul>
+	  		<li class="header-li"></li>
+	  		<li></li>
+	  		<li></li>
+	  		<li></li>
+	  		<li></li>
+	  		<li></li>
+	  		<li></li>
+	  		<li></li>
+	  	</ul>
+	  </div>
+	  <div class="address">
+	  	<p class="address-p1">
+	  		<span>梦追忆&家宝贝亲自乐园</span>
+	  		<span>梦追忆&家宝贝亲自乐园</span>	  		
+	  	</p>
+	  	<a class="address-a2" href="#">
+	  		<img src="../img/zhifu/images/2_05.png"/>
+	  		<span>北京市昌平区文华路89号院1号雅酷儿童世界2层8号</span>
+	  		<img src="../img/arrow.gif" />
+	  	</a>
+	  </div>
+	  <div class="zhifu">
+	    <p class="zhifu-p0">本店热门产品</p>
+	    <p class="zhifu-p1">
+	    	<span>梦追忆乐享25次卡</span>
+	    	<span>乐享卡</span>
+	    	<span>488.00元</span>
+	    	<span>760.00元</span>
+	    	<span>25次</span>
+	    	<a href="fukuan.html">购买</a>
+	    	<a href="#">查看详情</a>
+	    </p>
+	    <p class="zhifu-p1">
+	    	<span>梦追忆乐享12次卡</span>
+	    	<span>乐享卡</span>
+	    	<span>288.00元</span>
+	    	<span>388.00元</span>
+	    	<span>12次</span>
+	    	<a href="fukuan.html">购买</a>
+	    	<a href="#">查看详情</a>
+	    </p>
+	    <p class="zhifu-p1">
+	    	<span>梦追忆乐享40次卡</span>
+	    	<span>乐享卡</span>
+	    	<span>660.00元</span>
+	    	<span>880.00元</span>
+	    	<span>40次</span>
+	    	<a href="fukuan.html">购买</a>
+	    	<a href="#">查看详情</a>
+	    </p>
+	  </div>
+	</body>
+</html>

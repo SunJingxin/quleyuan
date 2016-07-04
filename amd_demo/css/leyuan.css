@@ -1,0 +1,126 @@
+.header{
+  width: 16rem;
+  height: 2.475rem;
+  display: flex;
+}
+.header li{
+  font-size: 0.775rem;
+  flex-grow:1 ;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+}
+/*可变换*/
+.header .header-li{
+  border-bottom: 0.1rem solid red;
+}
+/*半透明覆盖层*/
+.header-cover{
+  width: 16rem;
+  height: 40rem;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top:2.475rem;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+  transition:opacity 1s; 
+}
+.header-li-ul1,
+.header-li-ul2,
+.header-li-ul3{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 2.45rem;	
+	display: flex;
+	background-color:#DFDFDF;
+	width: 16rem;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	overflow: hidden;
+	display: none;
+	z-index: 9;
+}
+.header-li-ul1 li,
+.header-li-ul2 li,
+.header-li-ul3 li{
+	margin-top: 0.06rem;
+  text-align: center;
+  height: 1.91rem;
+  line-height: 1.91rem;
+  font-size: 0.75rem;
+  color: #666666;
+  background-color:white;  
+  width: 33.1%;
+  /*没加 flex-grow: 0; 出了问题*/
+  flex-grow: 0;
+}
+.header-li-ul1 li a,
+.header-li-ul2 li a,
+.header-li-ul3 li a{
+	color: #666666;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.header-li-ul2 li:nth-last-of-type(2),
+.header-li-ul3 li:nth-last-of-type(2)
+{
+	 margin-right: 0.06rem;
+}
+.header-li-ul2 li:last-child,
+.header-li-ul3 li:last-child{
+	 flex-grow: 1;
+}
+.main{
+  width: 16rem;
+  min-height: 1rem;
+}
+.main a{
+	display: block;
+  width: 16rem;
+  height:7.2rem;
+  margin-bottom: 0.2rem;
+  /*background-image: url(../img/1.jpg);*/
+  background-size: 16rem 7.2rem;
+  overflow: hidden;
+  color: yellow;
+ 
+}
+
+.main-a-img1{ 
+ display: block;
+ width:2.475rem;
+ height:2.425rem;
+ float: right;	
+}
+.main-a-img2{
+  display: block;
+  width:0.65rem;
+  height:0.95rem;
+  float: right;
+  margin:3.225rem -0.75rem 0 0;
+}
+.main span{
+  display: block;
+  color: white;
+  font-size:0.75rem;  
+}
+.main .main-a-span1{
+  margin: 3.3rem 0 0 0.75rem;
+}
+.main .main-a-span2{
+  margin: 0.5rem 0 0 0.75rem;
+}
+.main .main-a-span3{
+  font-size:0.5rem ;
+  float:right ;
+  margin:-0.5rem 1.2rem 0 0 ;
+}
+#result{
+	 width: 16rem;
+	height: 16rem;
+	background-color: #F4F4F4;
+}

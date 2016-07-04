@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width:16rem;
+  height:8.45rem;	
+  overflow: hidden;
+  position: relative;
+}
+.header-div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:64rem;
+	height:7.65rem;
+	transition: left 1s;
+}
+.header-div img{
+  display: block;
+  width: 16rem;
+  height: 7.65rem; 
+  float: left;
+}
+
+.header-ul{
+  width:2rem;
+  height: 0.3rem;
+  margin: 7.9rem 0 0 7rem;
+}
+.header-ul li{
+  width:0.3rem;
+  height: 0.3rem;
+  border-radius:50%;
+  background-color: #909090;
+  float: left;
+  margin-right:0.125rem;
+  background-color: #CCCCCC;
+}
+.header-ul .header-ul-li{
+  background-color: red;
+}
+.jingcai{
+  
+  width: 16rem;
+  height:7.65rem ;
+  display: flex;
+}
+.jingcai a {
+	flex-grow:1 ;
+	display: block;
+	float: left;
+	min-height:7.65rem ;
+	min-width:7.65rem;
+}
+.jingcai img{
+  width: 7.65rem;
+  height:7.65rem;
+}
+.jingcai2 {
+  width: 16rem;
+  height:2rem ;
+  overflow: hidden;
+}
+.jingcai2 span{
+  display:block;
+  width: 3.3rem;
+  height:1rem;
+  line-height: 1rem;
+  font-size:0.75rem;
+  border-top:1px  solid  red ;
+  border-bottom:1px  solid red;
+  margin: 0.5rem 0 0 6.4rem;
+  color: red;
+  text-align: center;
+  
+}
+.img1,
+.img2,
+.img3,
+.img4{
+  width: 16rem;
+  height: 6.225rem;
+  margin-bottom: 0.3rem;
+}
+.img4{
+	 margin-bottom: 3rem;
+}
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img{
+  width: 16rem;
+  height: 6.225rem;
+}
+.img0{
+  display: block; 
+}
+.end{
+  width: 16rem;
+  height: 3rem;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

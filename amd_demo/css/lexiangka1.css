@@ -1,0 +1,68 @@
+.header-img{
+  width: 27rem;
+  height:12.8765rem;
+}
+.theme{
+  width:19.85rem;
+  height:12rem ;
+  background-color:#EFEFEF ;
+  border-left:0.75rem solid #00BBEC ;
+  margin: 2.875rem 0 0 1.175rem;
+  font: 1rem;
+  line-height: 1.85rem;
+  color: #568ED4;
+  padding: 1.3rem 1.9rem 0 1.9rem;
+  font-weight: 500;
+}
+.theme2{
+  padding: 1.25rem 2rem;
+  color: #FF0000;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.theme3{
+	padding: 0 0.8rem;
+	height: 5.375rem;
+	color: #32BFF3;
+	font-size:0.95rem ;
+	line-height: 1.65rem;
+}
+.yanre{
+	margin:1.5rem 0 0 1.175rem ;
+	border-bottom:0.15rem solid #0070C0;
+	height: 2.35rem;
+}
+.yanre-div1{
+  width: 14.2rem;
+  height:2.15rem;
+  background-color: #0070C0;
+  color: white;
+  font-size: 1rem;
+  border-radius:0.175rem 0.2rem 0 0  ;
+  text-align: center;
+  padding-top:0.2rem ;
+}
+.main img{
+  margin: 0 1.175rem;
+  width:24.625rem;
+}
+.main p{
+  margin: 1rem 1.175rem;
+  width:24.625rem;
+  color: #5E5C5C;
+  font-size:1rem ;
+  line-height:1.6rem;
+}
+.main span{
+  display: block;
+  margin: 0 1.175rem;
+  width:24.625rem;
+  height: 5.1rem;
+  color: #00B050;
+  font-size:1.125rem;
+  line-height: 5rem;
+}
+.main .last-p{
+  color: #FFC000;
+  margin: 2.075rem 1.175rem 3.075rem 1.175rem;
+}

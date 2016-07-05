@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+ <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/myself4.css"/>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = (clientWidth/16).toFixed(1) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+        //640px时1rem是40px
+    </script>
+</head>
+	<body>
+	  <div class="main-top">	  	
+	  	<span class="main-top-span1">余额:</span>
+	  	<p>
+	  		<span class="main-top-span2">0.00</span>
+	    	<span>元</span>
+	  	</p>
+	  	<p>
+	  		<span>可以转出余额:</span>
+	  	    <span>0元</span>
+	  	</p>
+	  	<p>
+	  	   <span>可用乐币:</span>
+	  	   <span>0</span>
+	  	</p>
+	  	<a href="myself3.html">申请转出</a>
+	  </div>
+	 <ul class="main-ul">
+	 	<li class="main-ul-li">收支明细</li>
+	 	<li>申请记录</li>
+	 </ul>
+	  <div class="main-bottom">
+	  	没有数据
+	  </div>
+	</body>
+</html>

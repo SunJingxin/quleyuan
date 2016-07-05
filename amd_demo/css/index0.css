@@ -1,10 +1,11 @@
 .wrapper{
-	display: block;
+  display: block;
   width: 16rem;
   height: 25.5rem;
   background:linear-gradient(205deg,#00A5DE,#A5218C 40%,#EF5416 90%) ;
   overflow: hidden;
   position: relative;
+  z-index: 999;
 }	
 .wrapper img{
   display: block;
@@ -20,11 +21,11 @@
   height:10.425rem;
   margin-top: 6.825rem;
 }
-.wrapper img:nth-of-type(3){
+.wrapper img:nth-of-type(2){
   width:0.65rem;
   height:0.95rem;
   position: absolute;
-  top: 16rem;
+  top: 9.225rem;
   left:7.3rem;
   animation:span2 1.5s  linear infinite;
   z-index: 2;

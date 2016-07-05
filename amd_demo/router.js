@@ -32,7 +32,7 @@ define(["backbone"],function () {
       home.render();
     })
   },
-  defaultAction:function(){
+defaultAction:function(){
 	  	location.hash = 'home';
 	}
   // search: function(query, page) {

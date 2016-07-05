@@ -7,6 +7,100 @@
 <link rel="stylesheet" type="text/css" href="../css/zhifu.css"/>
 
  <title>Document</title>
+ <style type="text/css">
+.labox1{
+  width: 100%;
+  height: 80rem;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.pay{
+  margin:0 auto;
+  width: 99.5%;
+  height: 17.128rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  border: 1px solid #CCCCCC;
+}
+.pay span{
+  display: block;
+  font-size: 1.35rem;
+  color: #000000;
+  cursor: pointer;
+}
+.pay span:nth-of-type(1){
+  margin: 1.266rem  0 0 1.7rem;
+  font-weight:600 ;
+}
+.pay span:nth-of-type(2){
+	width: 1.35rem;
+	height: 0.3375rem;
+	background-color:#000000;
+	float: right;
+	transform: rotate(45deg);
+	margin:-0.84375rem 0.84375rem 0 0;
+}
+.pay span:nth-of-type(3){
+	width: 1.35rem;
+	height: 0.3375rem;
+	background-color: #000000;
+	float: right;
+	transform: rotate(-45deg);
+	margin:-0.84375rem 0.84375rem 0 0;
+}
+.pay form{
+  margin: 1.266rem 1.35rem 0 1.35rem;
+}
+
+.pay form input:nth-of-type(1){
+  width: 97.5%;
+  height: 3.29rem;
+  border-radius:0.25rem ;
+  border-color:#666666;
+  background-color: #EFEFEF;
+  font-size: 1.35rem;
+  padding-left:0.5rem ;
+}
+.pay form input:nth-of-type(2){
+  width: 10.125rem;
+  height: 3.29rem;
+  border-radius:0.25rem ;
+  border-color:#666666;
+  background-color: #EFEFEF;
+  font-size: 1.35rem;
+  padding-left:0.5rem ;
+  margin: 0.84rem 0rem 0.84rem 0;
+}
+.pay form button:nth-of-type(1){
+  width: 10.97rem;
+  height: 3.29rem;
+  background-color: #EC6D65;
+  color: white;
+  text-align: center;
+  height: 3.29rem;
+  margin-top:0.84rem ;
+  border: none;
+  font-size: 1.35rem;
+  float: right;
+}
+.pay form button:nth-of-type(2){
+  width: 100%;
+  height: 3.29rem;
+  font-size: 1.35rem;
+  color: white;
+  text-align: center;
+  height: 3.29rem;
+  background-color: #EC6D65;
+  border: none;
+  
+}
+ </style>
 <script>
         (function (doc, win) {
             var docEl = doc.documentElement;
@@ -58,11 +152,11 @@
 	    <p class="zhifu-p0">本店热门产品</p>
 	    <p class="zhifu-p1">
 	    	<span>梦追忆乐享25次卡</span>
-	    	<span>乐享卡</span>
+  	    	<span>乐享卡</span>
 	    	<span>488.00元</span>
 	    	<span><s>760.00元</s></span>
 	    	<span>25次</span>
-	    	<a href="fukuan.html">购买</a>
+	    	<a href="#">购买</a>
 	    	<a href="#">查看详情</a>
 	    </p>
 	    <p class="zhifu-p1">
@@ -71,7 +165,7 @@
 	    	<span>288.00元</span>
 	    	<span><s>388.00元</s></span>
 	    	<span>12次</span>
-	    	<a href="fukuan.html">购买</a>
+	    	<a href="#">购买</a>
 	    	<a href="#">查看详情</a>
 	    </p>
 	    <p class="zhifu-p1">
@@ -80,9 +174,45 @@
 	    	<span>660.00元</span>
 	    	<span><s>880.00元</s></span>
 	    	<span>40次</span>
-	    	<a href="fukuan.html">购买</a>
+	    	<a href="#">购买</a>
 	    	<a href="#">查看详情</a>
 	    </p>
 	  </div>
+	  <div class="labox1">
+		<div class="pay">
+			<span>登录</span>
+			<span></span>
+			<span></span>
+		    <form action="" method="post">
+		    	<input type="text" placeholder="请输入手机号"/>
+		    	<input type="text" placeholder="请输入验证码"/>
+		    	<!--<input type="button" value="获取验证码"/>-->
+		    	<!--<input type="button" value="登录"/>-->
+		    	<button>获取验证码</button>
+		    	<button>登录</button>
+		    </form>
+		</div>		
+	</div>	
+	  <script>
+	  	var oAs=document.getElementsByTagName("a");
+	  	
+	  	var labox1=document.getElementsByClassName("labox1")[0];
+	  	var pay=labox1.children[0];
+	  	var oSpan1=pay.children[1];
+	    var oSpan2=pay.children[2];
+	  	console.log(oSpan1)
+	  	for(var i=0;i<oAs.length;i++){
+	  	  oAs[i].onclick=function(){
+	  	  	labox1.style.display="block"
+	  	  }
+	  	}
+	  	oSpan1.onclick=function(){
+	  	  labox1.style.display="none"
+	  	}
+	  	oSpan2.onclick=function(){
+	  	  labox1.style.display="none"
+	  	}
+	  </script>
+	  
 	</body>
 </html>

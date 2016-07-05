@@ -67,7 +67,7 @@ define(["text!../../tpl/leyuan.html"],function(html){
              img0.attr("data-src",data[i].img);
          var a=$("<a></a>");
           //.css("background-image","url("+data[i].img+")")
-             a.attr("href","#")
+             a.attr("href","./myhtml/zhifu.html")
              a.css("display","block");
          var img1=$("<img class='main-a-img1'/>").attr("src","img/border.gif")
          var img2=$("<img class='main-a-img2' />").attr("src","img/map.gif")
@@ -136,7 +136,7 @@ define(["text!../../tpl/leyuan.html"],function(html){
              img0.attr("data-src",data[i].img);
          var a=$("<a></a>");
           //.css("background-image","url("+data[i].img+")")
-             a.attr("href","#")
+             a.attr("href","./myhtml/zhifu.html")
              a.css("display","block");
          var img1=$("<img class='main-a-img1'/>").attr("src","img/border.gif")
          var img2=$("<img class='main-a-img2' />").attr("src","img/map.gif")
@@ -188,7 +188,7 @@ if(oA[num].innerHTML=="西城区"){
              img0.attr("data-src",data[i].img);
          var a=$("<a></a>");
           //.css("background-image","url("+data[i].img+")")
-             a.attr("href","#")
+             a.attr("href","./myhtml/zhifu.html")
              a.css("display","block");
          var img1=$("<img class='main-a-img1'/>").attr("src","img/border.gif")
          var img2=$("<img class='main-a-img2' />").attr("src","img/map.gif")

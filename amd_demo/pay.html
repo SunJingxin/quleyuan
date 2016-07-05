@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+ <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+ <title>去乐园</title>
+<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = (clientWidth/16).toFixed(1) + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+        //640px时1rem是40px
+    </script>
+</head>
+<style type="text/css">
+.labox{
+  width: 100%;
+  height: 40rem;
+  background-color: rgba(0,0,0,0.5);
+  position: relative;
+}
+.pay{
+  width: 15.9875rem;
+  height: 10.15rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  border: 1px solid #CCCCCC;
+}
+.pay span{
+  display: block;
+  font-size: 0.75rem;
+  color: #000000;
+  cursor: pointer;
+}
+.pay span:nth-of-type(1){
+  margin: 0.75rem  0 0 0.9rem;
+  font-weight:600 ;
+}
+.pay span:nth-of-type(2){
+	width: 0.8rem;
+	height: 0.2rem;
+	background-color:#000000;
+	float: right;
+	transform: rotate(45deg);
+	margin:-0.5rem 0.5rem 0 0;
+}
+.pay span:nth-of-type(3){
+	width: 0.8rem;
+	height: 0.2rem;
+	background-color: #000000;
+	float: right;
+	transform: rotate(-45deg);
+	margin:-0.5rem 0.5rem 0 0;
+}
+.pay form{
+  margin: 0.75rem 0.8rem 0 0.8rem;
+}
+
+.pay form input:nth-of-type(1){
+  width: 95%;
+  height: 1.95rem;
+  border-radius:0.25rem ;
+  border-color:#666666;
+  background-color: #EFEFEF;
+  font-size: 0.75rem;
+  padding-left:0.5rem ;
+}
+.pay form input:nth-of-type(2){
+  width: 6rem;
+  height: 1.95rem;
+  border-radius:0.25rem ;
+  border-color:#666666;
+  background-color: #EFEFEF;
+  font-size: 0.75rem;
+  padding-left:0.5rem ;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+.pay form input:nth-of-type(3){
+  width: 6.5rem;
+  height: 1.95rem;
+  background-color: #EC6D65;
+  color: white;
+  text-align: center;
+  line-height: 1.95rem;
+  margin-top:0.5rem ;
+  border: none;
+}
+.pay form input:nth-of-type(4){
+  width: 100%;
+  height: 1.95rem;
+  font-size: 0.75rem;
+  color: white;
+  text-align: center;
+  line-height: 1.95rem;
+  background-color: #EC6D65;
+  border: none;
+  
+}
+</style>
+	<body>
+	<div class="labox">
+		<div class="pay">
+			<span>登录</span>
+			<span></span>
+			<span></span>
+		    <form action="" method="post">
+		    	<input type="text" placeholder="请输入手机号"/>
+		    	<input type="text" placeholder="请输入验证码"/>
+		    	<input type="button" value="获取验证码"/>
+		    	<input type="button" value="登录"/>
+		    </form>
+		</div>		
+	</div>	
+   <script>
+   	var oSpan=document.getElementsByTagName("span");
+   	var labox=document.getElementsByClassName("labox")[0];
+   	for(var i=0;i<oSpan.length;i++){
+   	  oSpan[i].onclick=function(){
+   	  	labox.style.display="none";
+   	  }
+   	}
+   </script>
+	</body>
+</html>

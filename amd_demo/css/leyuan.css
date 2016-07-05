@@ -23,7 +23,7 @@
   top:2.475rem;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 88;
   display: none;
   transition:opacity 1s; 
 }
@@ -41,7 +41,7 @@
 	justify-content: space-between;
 	overflow: hidden;
 	display: none;
-	z-index: 9;
+	z-index: 99;
 }
 .header-li-ul1 li,
 .header-li-ul2 li,
